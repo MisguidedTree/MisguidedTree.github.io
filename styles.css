@@ -1,0 +1,105 @@
+/* CSS to create background across Igloo that enforces 8:1 ratio required
+Currently, this also includes a gap where the door is located */
+body {
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+.container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 12.5%; /* 8:1 Width:Height Aspect Ratio */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+ }
+ /* TESTING. Used for standard screen sizing across website. Should be overwritten by below classes */
+ .screen {
+    position: absolute;
+    width: 19%;
+    text-align: center;
+    flex-grow: 1;
+    overflow: hidden;
+    margin: 1%;
+    height: 75%;
+	top: -50px;
+    z-index: 1;
+}
+/* Class to change objects to visible */
+.ongoing {
+    visibility: visible;
+}
+/* Classes to split screen into 5 */
+.panel15 {
+    /* margin-left used to prevent container hugging left edge of screen*/
+    margin-left: 0.5%;
+    background-color: grey;
+    width: 18.5%;
+}
+.panel25 {
+    background-color: grey;
+    margin-left: 20%;
+}
+.panel35 {
+    background-color: grey;
+    margin-left: 40%;
+}
+.panel45 {
+    background-color: grey;
+    margin-left: 60%;
+}
+.panel55 {
+    background-color: grey;
+    margin-left: 80%;
+}
+/* Classes to split screen into 3 */
+.panel13 {
+    /* margin-left used to prevent container hugging left edge of screen*/
+    margin-left: 0.5%;
+    background-color: grey;
+    width: 30%;
+}
+.panel23 {
+    background-color: grey;
+    margin-left: 33%;
+}
+.panel33 {
+    background-color: grey;
+    margin-left: 66%;
+}
+/* Classes to split screen into 4, with first container being 1 and 2 combined */
+.panel14 {
+    /* margin-left used to prevent container hugging left edge of screen*/
+    margin-left: 0.5%;
+    background-color: grey;
+    width: 38.5%;
+}
+.panel24 {
+    background-color: grey;
+    margin-left: 40%;
+}
+.panel34 {
+    background-color: grey;
+    margin-left: 60%;
+}
+.panel44 {
+    background-color: grey;
+    margin-left: 80%;
+}
+/* IglooWeb fix for images to fill container correctly */
+img {
+    width: -webkit-fill-available;
+}
+/* Ensure audio tags are not displayed */
+audio {
+    display: none;
+}
+/* Fill videos into container */
+video {
+    object-fit: contain;
+}
+.hidden {
+    visibility: hidden;
+    display: none;
+}
