@@ -2,8 +2,8 @@
 
 // Experimenting with directional sound
 // Currently attempting to use WebAudioAPI with stereo output
-// Expected issues in Igloo but currently untested
-// Expected working in browser but currently untested
+// Confirmed working in Igloo but does not wrap from far-left to 
+// far-right, or in reverse
 
 function playDirectedTrack(audiosource, volume, panlocation) {
     // Cross browser support
@@ -34,7 +34,6 @@ start_introduction.onclick = function() {
     stage1.className = ("screen panel35");
     var intro_audio_1 = document.getElementById("intro_audio_1");
     playDirectedTrack(intro_audio_1, 0.1, 0);
-    intro_audio_1.crossOrigin = 'anonymous';
     intro_audio_1.autoplay = true;
     intro_audio_1.load();
 }
@@ -46,7 +45,6 @@ intro_audio_1.onended = function () {
     stage2.className = ("screen panel25");
     var stage2video = document.getElementById("stage2video");
     playDirectedTrack(stage2video, 0.1, -0.6);
-    stage2video.volume = 0.1;
     stage2video.autoplay = true;
     stage2video.load();
 }
