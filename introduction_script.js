@@ -82,11 +82,10 @@ stage4video.onended = function() {
     intro_audio_3.load();
 }
 
-// Move from stage 5 to stage 6
 var intro_audio_3 = document.getElementById("intro_audio_3");
 intro_audio_3.onended = function() {
-    var stage1 = document.getElementById("stage1");
-    stage1.className += (" hidden");
-    var stage6 = document.getElementById("stage6");
-    stage6.className = ("screen panel35");
+    var intro_audio_4 = document.getElementById("intro_audio_4");
+    playDirectedTrack(intro_audio_4, 0.1, 0);
+    intro_audio_4.autoplay = true;
+    intro_audio_4.load();
 }
