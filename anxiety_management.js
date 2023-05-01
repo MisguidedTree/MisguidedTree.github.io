@@ -32,34 +32,62 @@ var med3 = document.getElementById("med3");
 
 // Declar variable to change background while one soundfile is playing
 var bground = document.getElementById("background");
+var guidedbground = document.getElementById("medback");
+var bodybground = document.getElementById("bodyback");
+var breathbground = document.getElementById("breathback");
+var medvid = document.getElementById("medvid");
+var bodyvid = document.getElementById("bodyvid");
+var breathvid = document.getElementById("breathvid");
+
 
 // Create onclick functions to begin meditation and actons on meditation ended
 start1.onclick = function() {
+    bground.className = "hidden";
+    bodybground.className = "container";
+    bodyvid.loop = true;
+    bodyvid.volume = 0;
+    bodyvid.autoplay = true;
+    bodyvid.load();
     playDirectedTrack(med1, 0.1, -0.4)
     med1.autoplay = true;
     med1.load();
-    bground.style.backgroundColor = red;
 }
 med1.onended = function() {
-    bground.style.backgroundColor = aqua;
+    bodybground.className = "hidden";
+    bground.className = "container";
+    bodyvid.pause();
 }
 
 start2.onclick = function() {
+    bground.className = "hidden";
+    breathbground.className = "container";
+    breathvid.loop = true;
+    breathvid.volume = 0;
+    breathvid.autoplay = true;
+    breathvid.load();
     playDirectedTrack(med2, 0.1, 0)
     med2.autoplay = true;
     med2.load();
-    bground.style.backgroundColor = green;
 }
 med2.onended = function() {
-    bground.style.backgroundColor = aqua;
+    breathbground.className = "hidden";
+    bground.className = "container";
+    breathvid.pause();
 }
 
 start3.onclick = function() {
+    bground.className = "hidden";
+    guidedbground.className = "container";
+    medvid.loop = true;
+    medvid.volume = 0;
+    medvid.autoplay = true;
+    medvid.load();
     playDirectedTrack(med3, 0.1, 0.6)
     med3.autoplay = true;
     med3.load();
-    bground.style.backgroundColor = yellow;
 }
 med3.onended = function() {
-    bground.style.backgroundColor = aqua;
+    guidedbground.className = "hidden";
+    bground.className = "container";
+    medvid.pause();
 }

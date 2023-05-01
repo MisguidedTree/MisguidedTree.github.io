@@ -13,6 +13,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    background-image: url(Images/Anxiety\ Management\ -\ Guided\ Meditation\ Image.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: 40%;
  }
  /* TESTING. Used for standard screen sizing across website. Should be overwritten by below classes */
  .screen {
@@ -116,4 +120,12 @@ video {
 .hidden {
     visibility: hidden;
     display: none;
+}
+/* Classes for background videos in Meditation */
+.videocontainer {
+    width: 100%;
+}
+.videobackground {
+    width: 100%;
+    position: absolute;
 }
