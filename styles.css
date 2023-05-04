@@ -55,19 +55,19 @@ body {
 /* Classes to split screen into 3 */
 .panel13 {
     /* margin-left used to prevent container hugging left edge of screen*/
-    margin-left: 0.5%;
+    margin-left: 10.5%;
     background-color: grey;
-    width: 30%;
+    width: 19%;
 }
 .panel23 {
     background-color: grey;
-    margin-left: 33%;
-    width: 30%;
+    margin-left: 40%;
+    width: 19%;
 }
 .panel33 {
     background-color: grey;
-    margin-left: 66%;
-    width: 30%;
+    margin-left: 70%;
+    width: 19%;
 }
 /* Classes to split screen into 4, with first container being 1 and 2 combined */
 .panel14 {
@@ -91,14 +91,14 @@ body {
 /* Classes to split screen into 2 */
 .panel12 {
     /* margin-left used to prevent container hugging left edge of screen*/
-    margin-left: 0.5%;
+    margin-left: 15.5%;
     background-color: grey;
-    width: 47.5%;
+    width: 19%;
 }
 .panel22 {
     background-color: grey;
-    margin-left: 50%;
-    width: 47.5%;
+    margin-left: 65%;
+    width: 19%;
 }
 /* IglooWeb fix for images to fill container correctly */
 img {
