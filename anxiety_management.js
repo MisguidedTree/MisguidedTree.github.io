@@ -49,6 +49,7 @@ start1.onclick = function() {
     bodyvid.autoplay = true;
     bodyvid.load();
     playDirectedTrack(med1, 0.1, -0.4)
+    med1.volume = 0.1;
     med1.autoplay = true;
     med1.load();
 }
@@ -66,6 +67,7 @@ start2.onclick = function() {
     breathvid.autoplay = true;
     breathvid.load();
     playDirectedTrack(med2, 0.1, 0)
+    med2.volume = 0.1;
     med2.autoplay = true;
     med2.load();
 }
@@ -83,6 +85,7 @@ start3.onclick = function() {
     medvid.autoplay = true;
     medvid.load();
     playDirectedTrack(med3, 0.1, 0.6)
+    med3.volume = 0.1;
     med3.autoplay = true;
     med3.load();
 }

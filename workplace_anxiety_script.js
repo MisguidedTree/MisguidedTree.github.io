@@ -25,6 +25,7 @@ function playDirectedTrack(audiosource, volume, panlocation) {
 var vid1 = document.getElementById("video1");
 vid1.onclick = function() {
     playDirectedTrack(vid1, 0.1, -0.5);
+    vid1.volume = 0.1;
     vid1.autoplay = true;
     vid1.load();
 }
@@ -32,6 +33,7 @@ vid1.onclick = function() {
 var vid2 = document.getElementById("video2");
 vid2.onclick = function() {
     playDirectedTrack(vid1, 0.1, 0.5);
+    vid2.volume = 0.1;
     vid2.autoplay = true;
     vid2.load();
 }

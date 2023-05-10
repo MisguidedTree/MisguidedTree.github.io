@@ -33,7 +33,8 @@ start_introduction.onclick = function() {
     var stage1 = document.getElementById("stage1");
     stage1.className = ("screen panel35");
     var intro_audio_1 = document.getElementById("intro_audio_1");
-    playDirectedTrack(intro_audio_1, 0.1, 0);
+    playDirectedTrack(intro_audio_1, 1, 0);
+    intro_audio_1.volume = 1;
     intro_audio_1.autoplay = true;
     intro_audio_1.load();
 }
@@ -45,6 +46,7 @@ intro_audio_1.onended = function () {
     stage2.className = ("screen panel25");
     var stage2video = document.getElementById("stage2video");
     playDirectedTrack(stage2video, 0.1, -0.6);
+    stage2video.volume = 0.1;
     stage2video.autoplay = true;
     stage2video.load();
 }
@@ -55,7 +57,8 @@ stage2video.onended = function() {
     var stage3 = document.getElementById("stage3");
     stage3.className = ("screen panel15");
     var intro_audio_2 = document.getElementById("intro_audio_2");
-    playDirectedTrack(intro_audio_2, 0.1, -1);
+    playDirectedTrack(intro_audio_2, 1, -1);
+    intro_audio_2.volume = 1;
     intro_audio_2.autoplay = true;
     intro_audio_2.load();
 }
@@ -67,6 +70,7 @@ intro_audio_2.onended = function() {
     stage4.className = ("screen panel45");
     var stage4video = document.getElementById("stage4video");
     playDirectedTrack(stage4video, 0.1, 0.6);
+    stage4video.volume = 0.1;
     stage4video.autoplay = true;
     stage4video.load();
 }
@@ -77,7 +81,8 @@ stage4video.onended = function() {
     var stage5 = document.getElementById("stage5");
     stage5.className = ("screen panel55");
     var intro_audio_3 = document.getElementById("intro_audio_3");
-    playDirectedTrack(intro_audio_3, 0.1, 1);
+    playDirectedTrack(intro_audio_3, 1, 1);
+    intro_audio_3.volume = 1;
     intro_audio_3.autoplay = true;
     intro_audio_3.load();
 }
@@ -85,7 +90,8 @@ stage4video.onended = function() {
 var intro_audio_3 = document.getElementById("intro_audio_3");
 intro_audio_3.onended = function() {
     var intro_audio_4 = document.getElementById("intro_audio_4");
-    playDirectedTrack(intro_audio_4, 0.1, 0);
+    playDirectedTrack(intro_audio_4, 1, 0);
+    intro_audio_4.volume = 1;
     intro_audio_4.autoplay = true;
     intro_audio_4.load();
 }
